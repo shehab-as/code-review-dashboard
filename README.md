@@ -2,7 +2,7 @@
 
 A full-stack web application to help engineering teams track GitHub PRs, review times, and identify bottlenecks in the code review process.
 
-![Dashboard Screenshot](https://via.placeholder.com/800x400?text=Dashboard+Screenshot)
+![Dashboard Screenshot](docs/dashboard-preview.png)
 
 ## Features
 
