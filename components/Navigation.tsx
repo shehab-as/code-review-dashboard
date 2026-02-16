@@ -11,6 +11,8 @@ export default function Navigation() {
   const navItems = [
     { href: '/', label: 'Dashboard', icon: '◻' },
     { href: '/queue', label: 'Queue', icon: '☰' },
+    { href: '/calendar', label: 'Calendar', icon: '▦' },
+    { href: '/news', label: 'News', icon: '▲' },
     { href: '/settings', label: 'Settings', icon: '⚙' },
   ];
 
@@ -26,9 +28,9 @@ export default function Navigation() {
           <div className="flex items-center space-x-8">
             <Link href="/" className="flex items-center space-x-2 group">
               <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center text-sm font-bold group-hover:bg-blue-400 transition-colors">
-                CR
+                MW
               </div>
-              <span className="text-lg font-semibold tracking-tight">My Code Reviews</span>
+              <span className="text-lg font-semibold tracking-tight">My Workspace</span>
             </Link>
 
             <div className="hidden sm:flex items-center space-x-1">

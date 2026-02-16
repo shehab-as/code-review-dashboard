@@ -13,7 +13,10 @@ const config: Config = {
           stale: '#F59E0B',      // Amber for >3 days
           critical: '#EF4444',    // Red for no reviewers/failing CI
           warning: '#F97316',     // Orange
-        }
+        },
+        hn: {
+          orange: '#FF6600',     // Hacker News brand orange
+        },
       },
     },
   },

@@ -3,8 +3,8 @@ import Navigation from '@/components/Navigation';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'My Code Reviews',
-  description: 'Track GitHub PRs, review times, and identify bottlenecks',
+  title: 'My Workspace',
+  description: 'Your developer hub — PRs, calendar, and Hacker News in one place',
 };
 
 export default function RootLayout({
