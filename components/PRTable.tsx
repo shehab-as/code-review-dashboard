@@ -23,8 +23,8 @@ export default function PRTable({ prs }: PRTableProps) {
   };
 
   const sortedPRs = [...prs].sort((a, b) => {
-    let aValue: any;
-    let bValue: any;
+    let aValue: string | number;
+    let bValue: string | number;
 
     switch (sortField) {
       case 'age':
@@ -44,8 +44,8 @@ export default function PRTable({ prs }: PRTableProps) {
         bValue = b.title;
         break;
       case 'comments':
-        aValue = a.comments;
-        bValue = b.comments;
+        aValue = a.comments ?? 0;
+        bValue = b.comments ?? 0;
         break;
       default:
         return 0;

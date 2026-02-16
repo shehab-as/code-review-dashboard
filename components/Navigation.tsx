@@ -17,7 +17,7 @@ export default function Navigation() {
   ];
 
   const isActive = (href: string) => {
-    if (href === '/') return pathname === '/' || pathname === '/dashboard';
+    if (href === '/') return pathname === '/';
     return pathname === href;
   };
 

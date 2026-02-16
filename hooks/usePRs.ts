@@ -1,15 +1,15 @@
 'use client';
 
 import useSWR from 'swr';
-import { PRWithMetrics } from '@/lib/types';
+import { PRWithMetrics, Repository } from '@/lib/types';
 
 interface UsePRsOptions {
   token?: string;
-  repositories?: any[];
+  repositories?: Repository[];
   refreshInterval?: number;
 }
 
-async function fetcher([token, repositories]: [string, any[]]) {
+async function fetcher([token, repositories]: [string, Repository[]]) {
   const response = await fetch('/api/github/prs', {
     method: 'POST',
     headers: {

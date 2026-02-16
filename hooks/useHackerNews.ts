@@ -3,8 +3,6 @@
 import useSWR from 'swr';
 import { HNStory, StoryType } from '@/lib/hn';
 
-export type { HNStory };
-
 async function fetcher([type, limit]: [StoryType, number]): Promise<HNStory[]> {
   const response = await fetch(`/api/hn?type=${type}&limit=${limit}`);
   if (!response.ok) {

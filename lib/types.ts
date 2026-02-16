@@ -111,19 +111,6 @@ export interface ReviewStats {
   alertsByType: Record<AlertType, number>;
 }
 
-// Filter options
-export interface FilterOptions {
-  repository?: string;
-  author?: string;
-  reviewer?: string;
-  alertType?: AlertType;
-}
-
 // Sort options
 export type SortField = 'age' | 'author' | 'repository' | 'title' | 'comments';
 export type SortDirection = 'asc' | 'desc';
-
-export interface SortOptions {
-  field: SortField;
-  direction: SortDirection;
-}

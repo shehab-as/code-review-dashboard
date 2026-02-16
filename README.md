@@ -160,7 +160,7 @@ Comprehensive view of all open PRs with:
 claude-box/
 ├── app/                      # Next.js app directory
 │   ├── api/                  # API routes
-│   │   ├── github/           # GitHub API endpoints (prs, reviews, stats)
+│   │   ├── github/           # GitHub API endpoints (prs, stats)
 │   │   └── hn/               # Hacker News API proxy
 │   ├── calendar/             # Calendar page
 │   ├── news/                 # Hacker News page
@@ -170,9 +170,8 @@ claude-box/
 │   ├── page.tsx              # Home / Dashboard
 │   └── globals.css           # Global styles
 ├── components/               # React components
-│   ├── analytics/            # Analytics charts
-│   ├── alerts/               # Alert components
-│   ├── filters/              # Filter components
+│   ├── alerts/               # Alert badge components
+│   ├── filters/              # Filter dropdowns
 │   ├── Navigation.tsx
 │   ├── PRCard.tsx
 │   ├── PRList.tsx
@@ -185,7 +184,7 @@ claude-box/
 ├── lib/                      # Core library
 │   ├── analytics.ts          # Analytics calculations
 │   ├── calendar-storage.ts   # Calendar localStorage CRUD
-│   ├── github-api.ts         # GitHub API wrappers
+│   ├── github-api.ts         # GitHub API wrappers + PR enrichment helpers
 │   ├── github-client.ts      # Octokit client setup
 │   ├── hn.ts                 # Hacker News API client
 │   ├── storage.ts            # Config localStorage helpers

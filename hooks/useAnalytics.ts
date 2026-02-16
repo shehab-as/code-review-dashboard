@@ -1,15 +1,15 @@
 'use client';
 
 import useSWR from 'swr';
-import { ReviewStats } from '@/lib/types';
+import { ReviewStats, Repository } from '@/lib/types';
 
 interface UseAnalyticsOptions {
   token?: string;
-  repositories?: any[];
+  repositories?: Repository[];
   refreshInterval?: number;
 }
 
-async function fetcher([token, repositories]: [string, any[]]) {
+async function fetcher([token, repositories]: [string, Repository[]]) {
   const response = await fetch('/api/github/stats', {
     method: 'POST',
     headers: {

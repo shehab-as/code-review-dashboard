@@ -94,7 +94,7 @@ export default function SettingsPage() {
     updateConfig(token, repositories);
     setTimeout(() => {
       setSaving(false);
-      router.push('/dashboard');
+      router.push('/');
     }, 500);
   };
 

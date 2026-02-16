@@ -1,10 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { useHackerNews, HNStory } from '@/hooks/useHackerNews';
+import { useHackerNews } from '@/hooks/useHackerNews';
+import { HNStory, StoryType } from '@/lib/hn';
 import { formatDistanceToNow } from 'date-fns';
-
-type StoryType = 'top' | 'new' | 'best';
 
 function getHostname(url: string): string {
   try {
